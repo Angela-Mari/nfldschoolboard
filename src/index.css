@@ -1,0 +1,50 @@
+:root {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  color-scheme: light;
+  color: #121212;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #7A0019;
+  text-decoration: underline;
+}
+a:hover {
+  color: #F50031;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight:bold;
+  color: #FFCC33;
+}
+
+h2 {
+  color: #121212;
+
+  font-size: 2.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h3 {
+  color: #121212;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+button {
+ 
+}
+button:hover {
+
+}
+
+button:focus,
+button:focus-visible {
+
+}
+
