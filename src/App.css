@@ -1,2 +1,26 @@
 
+.btn-primary {
+    background-color: #FFCC33 !important;
+    border-color: #FFCC33 !important;
+    color: black !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7A0019 !important;
+    color: white !important;
+  }
 
+  .accordion-item {
+    border: 1px solid #FFCC33 !important; /* Custom border color for the accordion item */
+  }
+
+  .accordion-button {
+    background-color: #FFCC33 !important; /* Custom background color for the button */
+    color: #fff; /* Custom text color */
+    border-color: #FFCC33 !important; /* Custom border color */
+  }
+
+  .accordion-button:focus {
+    box-shadow: none !important; /* Removes the default focus box-shadow */
+    outline: none !important; /* Removes the default focus outline */
+  }
