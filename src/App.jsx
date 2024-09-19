@@ -94,11 +94,10 @@ function App() {
         <a href="https://northfieldschools.org/reimagine/">What Are We Doing About the High School?</a>
         </Row>
         <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/ ">KYMN elections guide</a>
+        <a href="https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/ ">KYMN election guide</a>
         </Row>
         <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://lwvnorthfieldmn.org/2024/08/05/event-9-21-24-candidate-forums/
-">League of Women Voters of Northfield Cannon Falls: Nonpartisan Candidate Forum</a>
+        <a href="https://lwvnorthfieldmn.org/2024/08/05/event-9-21-24-candidate-forums/">League of Women Voters of Northfield Cannon Falls: Nonpartisan Candidate Forum</a>
         <p style={{paddingLeft:"1rem"}}>
           Date: September 21, 2024 <br/>
           Time: 1:00-2:00PM (for the Northfield School Board) <br/>
@@ -108,7 +107,7 @@ function App() {
         </p>
         </Row>
         <Row style={{paddingLeft:"1rem"}}>
-          Northfield News elections guide (coming in October)
+          Nfld News election guide (coming in October)
         </Row>
       </Col>
 
