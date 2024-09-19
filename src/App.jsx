@@ -48,10 +48,10 @@ function App() {
    
     <Accordion defaultActiveKey="0">    
       <Accordion.Item eventKey='0'>
-        <Accordion.Header style={{textAlign:"center"}}><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/warranty.png" alt="warranty"/><b>Endorsed by Northfield Education Association</b></Accordion.Header>
+        <Accordion.Header style={{textAlign:"center"}}><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/warranty.png" alt="warranty"/><b>Endorsed by the Northfield Education Association</b></Accordion.Header>
         <Accordion.Body>
           <p>
-          NEA endorsed Claudia Gonzalez-George, Maggie Epstein, Corey Butler, and Amy Goerwitz based on their experience, interviews, and questionaires.
+            NEA endorsed Claudia Gonzalez-George, Maggie Epstein, Corey Butler, and Amy Goerwitz based on their experience, interviews, and questionaires.
           </p>
           <Button href="https://www.facebook.com/northfieldeducationassociation/">Learn More</Button>
         </Accordion.Body>
