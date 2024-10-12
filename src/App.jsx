@@ -18,7 +18,7 @@ function App() {
     },
     candidate2: {
       name: "Corey Butler",
-      bio: "I'm the father of two students in the district, the husband of a townie, and the son of a school bus driver and custodian. I deeply care about the power of public schools and want to use my experience in life, work, and my first term on the school board to continue to serve our community and guide our remarkable district into the future.",
+      bio: "I'm the father of two students in the district, the husband of a local, and the son of a school bus driver and custodian. I deeply care about the power of public schools and want to use my experience in life, work, and my first term on the school board to continue to serve our community and guide our remarkable district into the future.",
       photo: '/assets/corey.jpg',
       fblink: "https://www.facebook.com/CoreyforNorthfieldSchools",
       sbquestionlink:"https://drive.google.com/file/d/1dUTSmo3Rrph_P-oah1o-dimWGDnIEzlt/view?usp=sharingCorey"
@@ -97,17 +97,10 @@ function App() {
         <a href="https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/ ">KYMN election guide</a>
         </Row>
         <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://lwvnorthfieldmn.org/2024/08/05/event-9-21-24-candidate-forums/">League of Women Voters of Northfield Cannon Falls: Nonpartisan Candidate Forum</a>
-        <p style={{paddingLeft:"1rem"}}>
-          Date: September 21, 2024 <br/>
-          Time: 1:00-2:00PM (for the Northfield School Board) <br/>
-          Location: Viking Theater, Buntrock Commons, St. Olaf College (1521 Campus Dr)<br/>
-          The forums will be recorded and available to <a href="https://www.stolaf.edu/multimedia/play/?e=4865">digitally stream</a> and will also be posted on the LWVNCF YouTube page and website in early October.
-
-        </p>
+        <a href="https://www.stolaf.edu/multimedia/play/?e=4865&t=183m20s">League of Women Voters of Northfield Cannon Falls: Nonpartisan Candidate Forum</a>
         </Row>
         <Row style={{paddingLeft:"1rem"}}>
-          Nfld News election guide (coming in October)
+        <a href="https://www.southernminn.com/northfield_news/news/where-do-the-candidates-stand-northfield-school-board/article_ac2b00c2-8026-11ef-b1f8-5b8c2c47ddaf.html">Nfld News election guide</a>
         </Row>
       </Col>
 
