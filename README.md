@@ -1,11 +1,23 @@
-## Static School Board Campaign Website
-This website is deployed at https://unitedfornorthfield.com 
+# United for Northfield — 2026 site (Miller & Melby)
 
-# React + Vite + React Bootstrap
+React + Vite rebuild of the 2026 campaign design, structured to drop into
+`Angela-Mari/nfldschoolboard`.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to use (for Angela)
 
-Currently, two official plugins are available:
+1. Create a branch (or fork): `git checkout -b campaign-2026`
+2. Replace `index.html`, `vite.config.js`, `package.json`, `src/`, and
+   `public/assets/` with the files in this folder. Bootstrap is no longer
+   needed — dependencies are just `react` and `react-dom`.
+3. `npm install && npm run dev` to preview locally.
+4. `npm run build` produces `dist/` for deployment; point
+   www.unitedfornorthfield.com at the deployed build as before.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To finish before launch
+
+- Endorsement banner: replace the placeholder once 2026 endorsements land.
+- "How write-in votes are counted" resource link (currently `#`).
+- League of Women Voters forum date, time, and location.
+- Photos live in `public/assets/` (`ben.jpg`, `alyssa.jpg`) — swap freely.
+
+All copy is in plain data objects at the top of `src/App.jsx`.

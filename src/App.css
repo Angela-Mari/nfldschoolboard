@@ -1,26 +1,93 @@
+.topbar {
+  background: var(--maroon-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 48px;
+  flex-wrap: wrap;
+}
+.brand { font: 800 19px 'Bricolage Grotesque', sans-serif; }
+.brand span { color: var(--gold); }
+.topnav { display: flex; align-items: center; gap: 30px; font-weight: 700; font-size: 13.5px; flex-wrap: wrap; }
+.topnav a { color: #fff; text-decoration: none; }
+.topnav a:hover { color: var(--gold); }
+.topnav .nav-cta { background: var(--gold); color: var(--maroon-dark); padding: 10px 18px; border-radius: 4px; }
+.topnav .nav-cta:hover { color: var(--maroon); }
 
-.btn-primary {
-    background-color: #FFCC33 !important;
-    border-color: #FFCC33 !important;
-    color: black !important;
-  }
-  
-  .btn-primary:hover {
-    background-color: #7A0019 !important;
-    color: white !important;
-  }
+.endorsement {
+  margin: 20px 48px 0;
+  background: var(--gold);
+  border-radius: 6px;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--maroon-dark);
+  font-weight: 700;
+  font-size: 14px;
+}
+.endorsement .badge { font: 700 13px ui-monospace, Menlo, monospace; background: var(--maroon-dark); color: #fff; padding: 4px 8px; border-radius: 3px; }
+.endorsement .learn-more { margin-left: auto; color: var(--maroon-dark); font-size: 13.5px; text-decoration: none; border-bottom: 2px solid var(--maroon-dark); }
 
-  .accordion-item {
-    border: 1px solid #FFCC33 !important; /* Custom border color for the accordion item */
-  }
+.hero { padding: 60px 48px 40px; }
+.eyebrow { font: 600 13px ui-monospace, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 14px; }
+.hero h1 { font-size: 56px; line-height: 1.05; font-weight: 800; margin: 0 0 18px; color: var(--maroon-dark); max-width: 20ch; text-wrap: pretty; }
+.hero-sub { font-size: 18px; line-height: 1.6; color: var(--body); margin: 0 0 28px; max-width: 52ch; }
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-solid { background: var(--maroon); color: #fff; padding: 14px 26px; border-radius: 4px; font-weight: 700; font-size: 15px; text-decoration: none; }
+.btn-solid:hover { background: var(--maroon-dark); color: #fff; }
+.btn-outline { border: 2px solid var(--maroon); color: var(--maroon); padding: 12px 24px; border-radius: 4px; font-weight: 700; font-size: 15px; text-decoration: none; }
 
-  .accordion-button {
-    background-color: #FFCC33 !important; /* Custom background color for the button */
-    color: #fff; /* Custom text color */
-    border-color: #FFCC33 !important; /* Custom border color */
-  }
+.writein { background: var(--maroon); color: #fff; padding: 34px 48px 38px; }
+.writein h2 { font-size: 20px; font-weight: 800; color: var(--gold); margin: 0 0 22px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.step { display: flex; flex-direction: column; gap: 12px; }
+.step-label { display: flex; gap: 14px; align-items: flex-start; font-size: 14.5px; line-height: 1.5; color: #f2dfe2; }
+.step-label span { font: 800 26px 'Bricolage Grotesque', sans-serif; color: var(--gold); }
+.step-label strong { color: #fff; }
+.step-svg { width: 100%; height: auto; background: #fbf8f1; border-radius: 8px; }
 
-  .accordion-button:focus {
-    box-shadow: none !important; /* Removes the default focus box-shadow */
-    outline: none !important; /* Removes the default focus outline */
-  }
+.section-title { font-size: 28px; font-weight: 800; color: var(--maroon-dark); margin: 0 0 24px; }
+
+.candidates { padding: 56px 48px; background: var(--bg-alt); }
+.candidate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.candidate-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 26px 28px; display: flex; gap: 22px; align-items: flex-start; }
+.candidate-card .candidate-photo { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; flex: none; }
+.candidate-card h3 { font-size: 21px; font-weight: 800; color: var(--maroon-dark); margin: 0; }
+.candidate-role { font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-dark); margin: 4px 0 10px; }
+.candidate-card p { font-size: 14.5px; line-height: 1.6; color: var(--body); margin: 0; }
+
+.platform { padding: 56px 48px 8px; }
+.platform-quote { font-size: 15px; line-height: 1.5; color: var(--muted); margin: -18px 0 28px; max-width: 70ch; }
+.plank-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.plank { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 22px 26px; }
+.plank h3 { font-size: 16.5px; font-weight: 700; color: var(--maroon-dark); margin: 0 0 8px; }
+.plank p { font-size: 14px; line-height: 1.6; color: var(--body); margin: 0; }
+
+.bottom { padding: 56px 48px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: start; }
+.why-card { background: var(--gold); border-radius: 8px; padding: 36px 40px; }
+.why-card h2 { font-size: 28px; font-weight: 800; font-style: italic; margin: 0 0 16px; color: #241b16; }
+.why-card p { font-size: 15px; line-height: 1.65; color: #3d3226; margin: 0 0 14px; }
+.why-card p:last-child { margin-bottom: 0; }
+.resources h2 { font-size: 24px; font-weight: 800; font-style: italic; color: var(--maroon-dark); margin: 0 0 16px; }
+.resources ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-weight: 700; font-size: 14.5px; }
+.forum { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 18px; }
+.forum h3 { font-size: 14px; font-weight: 700; color: var(--maroon-dark); margin: 0 0 8px; }
+.forum p { font-size: 13.5px; line-height: 1.6; color: var(--muted); margin: 0; }
+
+.footer { background: var(--maroon-dark); color: #c9a9ae; padding: 26px 48px; text-align: center; font-size: 12.5px; }
+.footer p { margin: 2px 0; }
+.footer a { color: var(--gold); }
+
+@media (max-width: 760px) {
+  .topbar, .hero, .writein, .candidates, .platform, .bottom, .footer { padding-left: 20px; padding-right: 20px; }
+  .endorsement { margin: 16px 20px 0; }
+  .hero h1 { font-size: 36px; }
+  .steps, .candidate-grid, .plank-grid { grid-template-columns: 1fr; }
+  .bottom { grid-template-columns: 1fr; gap: 36px; }
+  .hero-ctas { flex-direction: column; }
+  .btn-solid, .btn-outline { text-align: center; }
+}

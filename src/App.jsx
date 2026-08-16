@@ -1,120 +1,198 @@
 import './App.css'
-import Card from './Card';
-import Row from 'react-bootstrap/Row';
-import Navbar from 'react-bootstrap/Navbar';
-import Col from 'react-bootstrap/Col';
-import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  const candidates = {
-    candidate1: {
-        name: "Claudia Gonzalez-George",
-        bio: "I’ve been in the field of education most of my adult life either teaching or supporting students.  As a first-generation American and proud parent of three, I believe in public education. I’m grateful for the opportunity I’ve had during my term on the school board to impact Northfield students at the policy and governance level, and hope to continue serving.",
-        photo: '/assets/Claudia.jpg',
-        fblink: "https://www.facebook.com/claudiaforschoolboard/",
-        sbquestionlink: "https://drive.google.com/file/d/1LKrQPpVZ8FxV5Sdx4x3yTBAnyMgYXOm1/view?fbclid=IwY2xjawFV0DVleHRuA2FlbQIxMAABHdE3DQw9S2E2SnXeirGh_99H4i5BQGxC1v_YN4yuA7Tu5xWy9-JYqU3yOg_aem_ZiJFbfP-CIUdB2-UJPuz5g"
-    },
-    candidate2: {
-      name: "Corey Butler",
-      bio: "I'm the father of two students in the district, the husband of a local, and the son of a school bus driver and custodian. I deeply care about the power of public schools and want to use my experience in life, work, and my first term on the school board to continue to serve our community and guide our remarkable district into the future.",
-      photo: '/assets/corey.jpg',
-      fblink: "https://www.facebook.com/CoreyforNorthfieldSchools",
-      sbquestionlink:"https://drive.google.com/file/d/1dUTSmo3Rrph_P-oah1o-dimWGDnIEzlt/view?usp=sharingCorey"
+const candidates = [
+  {
+    name: 'Ben Miller',
+    role: 'Incumbent · Seeking re-election',
+    photo: '/assets/ben.jpg',
+    bio: 'Northfield parent and school board member for the past four years, and a fair, pragmatic voice trusted to get the work done. Has served on the Policy, Legislative Action, and Negotiations committees and the District Youth Council.',
   },
-  candidate3: {
-    name: "Maggie Epstein",
-    bio: "As a parent, foster parent, and engaged member of the Northfield community, I have developed a deep commitment to our schools and a desire to serve on the school board. I have educational and professional experience in the field of education and believe that public schools are the key to a thriving democracy.",
-    photo: '/assets/maggie.jpg',
-    fblink: "https://www.facebook.com/maggieepsteinschoolboard",
-    sbquestionlink:"https://drive.google.com/file/d/1ZYC597DXumuHLwXu2a3cyam0xrJxoOcs/view"
+  {
+    name: 'Alyssa Melby',
+    role: 'Write-in candidate',
+    photo: '/assets/alyssa.jpg',
+    bio: 'Parent of three Northfield students. Director of the Svoboda Center for Civic Engagement at St. Olaf College, former Executive Director of the Northfield Arts Guild, and co-chair of the Healthy Community Initiative board.',
+  },
+]
+
+const benPlatform = {
+  heading: "Ben's platform",
+  quote: '"A school board seat is about service and stewardship, and being trusted by the community to get the work done."',
+  planks: [
+    ['Stabilize enrollment', 'Declining enrollment is the district\u2019s biggest challenge. Ben will keep inviting families to choose Northfield and protect the orchestra, arts, languages, and activities that make a Northfield education stand out.'],
+    ['Steward the district\u2019s resources', 'Responsible stewardship is the board\u2019s first job: budgets and contracts built in honest partnership with educators, advocacy for better state funding, and firm opposition to school vouchers.'],
+    ['Let educators lead the classroom', 'Curriculum belongs with the district\u2019s educational experts, with the board overseeing clear, measurable outcomes as the new reading and math curriculums take hold.'],
+    ['Later start times, done right', 'The research on later starts for older students is clear, and Northfield is the Big 9\u2019s earliest-starting high school. Ben supports the change, planned carefully so the effects on families and finances are understood first.'],
+  ],
 }
 
+const alyssaPlatform = {
+  heading: "Alyssa's platform",
+  quote: '"Budgets are where you put your values, and education is a people business."',
+  planks: [
+    ['Fund our schools for the future', 'Alyssa will pursue new revenue from grants, sponsorships, and earned income to keep our schools strong, listening deeply to the community and educators so every budget reflects Northfield\u2019s values.'],
+    ['Put students at the center', 'The district\u2019s mission of educating all students should anchor every board decision, with a governance role focused on vision, policy, budget, and advocacy for public education.'],
+    ['Champion our educators', 'Educators are the greatest source of stability in our schools. Alyssa sees the board and educators as partners, with educators at the table from the start on the decisions that affect their classrooms.'],
+    ['Let evidence guide decisions', 'Support later start times for older students, where the research is clear, and take a fresh look at 1:1 iPad use: technology should augment and support learning based on what works best for students.'],
+  ],
 }
 
+const resources = [
+  ['Where do I vote?', 'https://pollfinder.sos.state.mn.us/Default.aspx'],
+  ['How write-in votes are counted', '#'],
+  ['What does the Northfield School Board do?', 'https://northfieldschools.org/about/school-board/'],
+  ['KYMN elections guide', 'https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/'],
+]
 
+function StepOneSvg() {
   return (
-    <>
-     <Navbar style={{backgroundColor:"#7A0019", justifyContent:"center"}}>
-    <h1 style={{textAlign:"center"}}>United for Northfield</h1>
-    </Navbar>
-    
-   
-    
-
-
-    <div style={{padding:"1rem"}}>
-   
-    <Accordion defaultActiveKey="0">    
-      <Accordion.Item eventKey='0'>
-        <Accordion.Header style={{textAlign:"center"}}><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/warranty.png" alt="warranty"/><b>Endorsed by the Northfield Education Association</b></Accordion.Header>
-        <Accordion.Body>
-          <p>
-            NEA endorsed Claudia Gonzalez-George, Maggie Epstein, Corey Butler, and Amy Goerwitz based on their experience, interviews, and questionaires.
-          </p>
-          <Button href="https://www.facebook.com/northfieldeducationassociation/">Learn More</Button>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-    
-    <Row>
-      {
-      Object.entries(candidates).map(([key, value]) => (
-        <Card key ={key} name={value.name} bio={value.bio} photo={value.photo} fblink={value.fblink} sbquestionlink={value.sbquestionlink}></Card>
-      ))}
-    </Row>
-
-    <Row>
-      <Col xs={12} s={6} m={6} l={6} xl={6}>
-     
-      <Row style={{backgroundColor:"#FFCC33", padding:"1rem"}}>
-      <h2>Why We Are Running</h2>
-        <p>
-          This November, voters will select four community members to serve on the Northfield School Board. In districts across the country, extremist groups have attempted to influence the makeup of school boards to achieve their radical goals — these goals do not reflect our community. 
-        </p>
-        <p>
-          We have aligned our campaigns to preserve the excellent educational system in the Northfield School District. The three of us are committed to ensuring responsible, forward-thinking oversight of the district. We believe in allowing our exemplary administrators and staff to do what they do best: Prepare every student for lifelong success. Together, we are United for Northfield.
-        </p>
-        </Row>
-      </Col>
-      
-      <Col xs={12} s={6} m={6} l={6} xl={6}>
-        <h2 style={{paddingTop:"1rem"}}>Resources</h2>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://pollfinder.sos.state.mn.us/Default.aspx">Where Do I Vote?</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://mnmsba.org/wp-content/uploads/2021/08/RunningForSchoolBoard.pdf">What Does a Good School Board Member Do?</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://northfieldschools.org/about/school-board/">What Does the Northfield School Board Do?</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://northfieldschools.org/reimagine/">What Are We Doing About the High School?</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/ ">KYMN election guide</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://www.stolaf.edu/multimedia/play/?e=4865&t=183m20s">League of Women Voters of Northfield Cannon Falls: Nonpartisan Candidate Forum</a>
-        </Row>
-        <Row style={{paddingLeft:"1rem"}}>
-        <a href="https://www.southernminn.com/northfield_news/news/where-do-the-candidates-stand-northfield-school-board/article_ac2b00c2-8026-11ef-b1f8-5b8c2c47ddaf.html">Nfld News election guide</a>
-        </Row>
-      </Col>
-
-
-    </Row>
-    
-    </div>
-    <footer style={{backgroundColor:"#7A0019", textAlign:"center", padding:".5rem"}}> 
-      <p style={{color:"#FFFFFF"}}>Prepared and paid for by the candidates</p>
-      <p style={{color:"#FFFFFF"}}>P.O. Box 13 <br /> Northfield, MN 55057</p>
-      <p style={{color:"#FFCC33"}}> Designed by <a style={{color:"#FFCC33"}} href="https://angelageorge.com">Angela George</a> © 2024 </p>
-    </footer>
-    </>
+    <svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Ballot with the School Board race highlighted">
+      <rect x="70" y="12" width="160" height="126" rx="4" fill="#fff" stroke="#cbbfa6" strokeWidth="2" />
+      <rect x="82" y="24" width="70" height="8" rx="2" fill="#cbbfa6" />
+      <ellipse cx="92" cy="46" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
+      <rect x="106" y="42" width="80" height="7" rx="2" fill="#e4dbc5" />
+      <ellipse cx="92" cy="62" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
+      <rect x="106" y="58" width="66" height="7" rx="2" fill="#e4dbc5" />
+      <rect x="76" y="76" width="148" height="54" rx="4" fill="#fdf3d7" stroke="#FFCC33" strokeWidth="2.5" />
+      <text x="86" y="93" fontFamily="Bricolage Grotesque, sans-serif" fontSize="11" fontWeight="800" fill="#7A0019">SCHOOL BOARD</text>
+      <ellipse cx="94" cy="107" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
+      <rect x="108" y="103" width="76" height="7" rx="2" fill="#e4dbc5" />
+      <ellipse cx="94" cy="121" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
+      <rect x="108" y="117" width="60" height="7" rx="2" fill="#e4dbc5" />
+    </svg>
   )
 }
 
-export default App
+function StepTwoSvg() {
+  return (
+    <svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="The write-in oval filled in">
+      <ellipse cx="70" cy="47" rx="16" ry="10" fill="none" stroke="#8a7a58" strokeWidth="3" />
+      <rect x="100" y="40" width="130" height="13" rx="3" fill="#e4dbc5" />
+      <ellipse cx="70" cy="98" rx="16" ry="10" fill="#241b16" stroke="#241b16" strokeWidth="3" />
+      <text x="100" y="104" fontFamily="Bricolage Grotesque, sans-serif" fontSize="15" fontWeight="800" fill="#7A0019">WRITE-IN</text>
+      <line x1="100" y1="116" x2="240" y2="116" stroke="#8a7a58" strokeWidth="2" />
+    </svg>
+  )
+}
+
+function StepThreeSvg() {
+  return (
+    <svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Alyssa Melby written on the write-in line">
+      <ellipse cx="52" cy="82" rx="14" ry="9" fill="#241b16" />
+      <text x="78" y="88" fontFamily="Caveat, 'Segoe Script', cursive" fontSize="30" fill="#241b16">Alyssa Melby</text>
+      <line x1="78" y1="96" x2="252" y2="96" stroke="#8a7a58" strokeWidth="2" />
+      <text x="78" y="112" fontFamily="ui-monospace, Menlo, monospace" fontSize="9" fill="#8a7a58">WRITE-IN</text>
+    </svg>
+  )
+}
+
+function Platform({ heading, quote, planks }) {
+  return (
+    <section className="platform">
+      <h2 className="section-title">{heading}</h2>
+      <p className="platform-quote">{quote}</p>
+      <div className="plank-grid">
+        {planks.map(([title, body]) => (
+          <div className="plank" key={title}>
+            <h3>{title}</h3>
+            <p>{body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default function App() {
+  return (
+    <>
+      <header className="topbar">
+        <div className="brand">United <span>for</span> Northfield</div>
+        <nav className="topnav">
+          <a href="#candidates">Candidates</a>
+          <a href="#why">Why We're Running</a>
+          <a href="#resources">Resources</a>
+          <a className="nav-cta" href="mailto:unitedfornorthfield@gmail.com?subject=Yard%20sign%20request">Get a Yard Sign</a>
+        </nav>
+      </header>
+
+      <div className="endorsement">
+        <span className="badge">2026</span>
+        <span>[ Endorsement banner: endorsing organizations to come ]</span>
+        <a className="learn-more" href="#">Learn more</a>
+      </div>
+
+      <section className="hero">
+        <div className="eyebrow">Northfield School Board · Tuesday, Nov 3, 2026</div>
+        <h1>Keep Northfield schools moving forward.</h1>
+        <p className="hero-sub">Re-elect <strong>Ben Miller</strong> and write in <strong>Alyssa Melby</strong> for the Northfield School Board.</p>
+        <div className="hero-ctas">
+          <a className="btn-solid" href="mailto:unitedfornorthfield@gmail.com?subject=Volunteer">Volunteer</a>
+          <a className="btn-outline" href="mailto:unitedfornorthfield@gmail.com?subject=Yard%20sign%20request">Request a Yard Sign</a>
+        </div>
+      </section>
+
+      <section className="writein">
+        <h2>How to cast a write-in vote</h2>
+        <div className="steps">
+          <div className="step">
+            <div className="step-label"><span>1</span>Find the School Board race on your ballot.</div>
+            <StepOneSvg />
+          </div>
+          <div className="step">
+            <div className="step-label"><span>2</span>Fill in the oval next to "write-in."</div>
+            <StepTwoSvg />
+          </div>
+          <div className="step">
+            <div className="step-label"><span>3</span>Print <strong>Alyssa Melby</strong> on the line.</div>
+            <StepThreeSvg />
+          </div>
+        </div>
+      </section>
+
+      <section className="candidates" id="candidates">
+        <h2 className="section-title">The candidates</h2>
+        <div className="candidate-grid">
+          {candidates.map((c) => (
+            <div className="candidate-card" key={c.name}>
+              <img src={c.photo} alt={c.name} className="candidate-photo" />
+              <div>
+                <h3>{c.name}</h3>
+                <div className="candidate-role">{c.role}</div>
+                <p>{c.bio}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <Platform {...benPlatform} />
+      <Platform {...alyssaPlatform} />
+
+      <section className="bottom" id="why">
+        <div className="why-card">
+          <h2>Why we are running</h2>
+          <p>This November, Northfield voters will decide who oversees our public schools. Strong districts depend on steady, experienced leadership focused on students, not politics.</p>
+          <p>We have aligned our campaigns to preserve the excellent educational system in the Northfield School District, and to let our administrators and staff do what they do best: prepare every student for lifelong success. Together, we are United for Northfield.</p>
+        </div>
+        <div className="resources" id="resources">
+          <h2>Resources</h2>
+          <ul>
+            {resources.map(([label, href]) => (
+              <li key={label}><a href={href}>{label}</a></li>
+            ))}
+          </ul>
+          <div className="forum">
+            <h3>Upcoming forum</h3>
+            <p>League of Women Voters candidate forum<br />[ Date, time &amp; location to come ]</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <p>Prepared and paid for by the candidates.</p>
+        <p>P.O. Box 13, Northfield, MN 55057 · <a href="mailto:unitedfornorthfield@gmail.com">unitedfornorthfield@gmail.com</a></p>
+      </footer>
+    </>
+  )
+}
