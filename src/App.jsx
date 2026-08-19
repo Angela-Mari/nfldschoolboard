@@ -10,7 +10,7 @@ const candidates = [
   {
     name: 'Alyssa Melby',
     role: 'Write-in candidate',
-    photo: '/assets/alyssa.jpg',
+    photo: '/assets/AHM-2.jpg',
     bio: 'Parent of three Northfield students. Director of the Svoboda Center for Civic Engagement at St. Olaf College, former Executive Director of the Northfield Arts Guild, and co-chair of the Healthy Community Initiative board.',
   },
 ]
