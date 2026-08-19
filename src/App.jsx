@@ -20,8 +20,8 @@ const benPlatform = {
   quote: '"A school board seat is about service and stewardship, and being trusted by the community to get the work done."',
   planks: [
     ['Stabilize enrollment', 'Declining enrollment is the district\u2019s biggest challenge. Ben will keep inviting families to choose Northfield and protect the orchestra, arts, languages, and activities that make a Northfield education stand out.'],
-    ['Steward the district\u2019s resources', 'Responsible stewardship is the board\u2019s first job: budgets and contracts built in honest partnership with educators, advocacy for better state funding, and firm opposition to school vouchers.'],
-    ['Let educators lead the classroom', 'Curriculum belongs with the district\u2019s educational experts, with the board overseeing clear, measurable outcomes as the new reading and math curriculums take hold.'],
+    ['Steward the district\u2019s resources', 'Responsible stewardship is the board\u2019s first job: budgets and contracts built in honest partnership with educators, advocacy for better state funding, and ensuring public funding stays with public schools.'],
+    ['Let educators lead the classroom', 'Curriculum belongs with the district\u2019s educational experts, with the board overseeing clear, measurable outcomes as the new reading and math curriculums take hold. We can become an even stronger district academically, ensuring that our students leave ready for their next chapter in life.'],
     ['Later start times, done right', 'The research on later starts for older students is clear, and Northfield is the Big 9\u2019s earliest-starting high school. Ben supports the change, planned carefully so the effects on families and finances are understood first.'],
   ],
 }
@@ -38,15 +38,15 @@ const alyssaPlatform = {
 }
 
 const resources = [
-  ['Where do I vote?', 'https://pollfinder.sos.state.mn.us/Default.aspx'],
-  ['How write-in votes are counted', '#'],
+  ['Where do I vote?', 'https://sos.mn.gov/elections-voting/election-day-voting/'],
+  ['How write-in votes are counted', 'https://www.revisor.mn.gov/rules/8230.2040/'],
   ['What does the Northfield School Board do?', 'https://northfieldschools.org/about/school-board/'],
-  ['KYMN elections guide', 'https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/'],
+  // Hidden until KYMN publishes a 2026 guide:
+  // ['KYMN elections guide', 'https://kymnradio.net/2024/09/14/meet-the-candidates-for-northfield-school-board-2/'],
 ]
 
 function StepOneSvg() {
-  return (
-    <svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Ballot with the School Board race highlighted">
+  return ( Ben recognizes that changes to schedules affect students, educators, and families, and these are all voices that need to be heard.<svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Ballot with the School Board race highlighted">
       <rect x="70" y="12" width="160" height="126" rx="4" fill="#fff" stroke="#cbbfa6" strokeWidth="2" />
       <rect x="82" y="24" width="70" height="8" rx="2" fill="#cbbfa6" />
       <ellipse cx="92" cy="46" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
@@ -112,23 +112,24 @@ export default function App() {
           <a href="#candidates">Candidates</a>
           <a href="#why">Why We're Running</a>
           <a href="#resources">Resources</a>
-          <a className="nav-cta" href="mailto:unitedfornorthfield@gmail.com?subject=Yard%20sign%20request">Get a Yard Sign</a>
+          <a className="nav-cta" href="mailto:alyssa.melby.nfld@gmail.com?subject=Yard%20sign%20request">Get a Yard Sign</a>
         </nav>
       </header>
 
+      {/* Endorsement banner hidden until 2026 endorsements land
       <div className="endorsement">
         <span className="badge">2026</span>
         <span>[ Endorsement banner: endorsing organizations to come ]</span>
         <a className="learn-more" href="#">Learn more</a>
-      </div>
+      </div> */}
 
       <section className="hero">
         <div className="eyebrow">Northfield School Board · Tuesday, Nov 3, 2026</div>
-        <h1>Keep Northfield schools moving forward.</h1>
+        <h1>Strong Schools.<br />Strong Northfield.</h1>
         <p className="hero-sub">Re-elect <strong>Ben Miller</strong> and write in <strong>Alyssa Melby</strong> for the Northfield School Board.</p>
         <div className="hero-ctas">
-          <a className="btn-solid" href="mailto:unitedfornorthfield@gmail.com?subject=Volunteer">Volunteer</a>
-          <a className="btn-outline" href="mailto:unitedfornorthfield@gmail.com?subject=Yard%20sign%20request">Request a Yard Sign</a>
+          <a className="btn-solid" href="mailto:alyssa.melby.nfld@gmail.com?subject=Volunteer">Volunteer</a>
+          <a className="btn-outline" href="mailto:alyssa.melby.nfld@gmail.com?subject=Yard%20sign%20request">Request a Yard Sign</a>
         </div>
       </section>
 
@@ -172,8 +173,8 @@ export default function App() {
       <section className="bottom" id="why">
         <div className="why-card">
           <h2>Why we are running</h2>
-          <p>This November, Northfield voters will decide who oversees our public schools. Strong districts depend on steady, experienced leadership focused on students, not politics.</p>
-          <p>We have aligned our campaigns to preserve the excellent educational system in the Northfield School District, and to let our administrators and staff do what they do best: prepare every student for lifelong success. Together, we are United for Northfield.</p>
+          <p>This November, Northfield voters will decide who oversees our public schools. Strong districts depend on steady, experienced leadership focused on students.</p>
+          <p>We have aligned our campaigns to preserve the excellent educational system in the Northfield School District, and to let our administrators and staff do what they do best which is to prepare every student for lifelong success. Together, we are United for Northfield.</p>
         </div>
         <div className="resources" id="resources">
           <h2>Resources</h2>
@@ -182,16 +183,17 @@ export default function App() {
               <li key={label}><a href={href}>{label}</a></li>
             ))}
           </ul>
+          {/* Forum block hidden until a forum is scheduled
           <div className="forum">
             <h3>Upcoming forum</h3>
             <p>League of Women Voters candidate forum<br />[ Date, time &amp; location to come ]</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
       <footer className="footer">
         <p>Prepared and paid for by the candidates.</p>
-        <p>P.O. Box 13, Northfield, MN 55057 · <a href="mailto:unitedfornorthfield@gmail.com">unitedfornorthfield@gmail.com</a></p>
+        <p>P.O. Box 323, Northfield, MN 55057 · <a href="mailto:unitedfornorthfield@gmail.com">unitedfornorthfield@gmail.com</a></p>
       </footer>
     </>
   )
