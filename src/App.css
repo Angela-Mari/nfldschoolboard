@@ -56,6 +56,7 @@
 .candidate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .candidate-card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 26px 28px; display: flex; gap: 22px; align-items: flex-start; }
 .candidate-card .candidate-photo { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; flex: none; }
+.candidate-card .candidate-photo.alyssa { object-position: 50% 12%; }
 .candidate-card h3 { font-size: 21px; font-weight: 800; color: var(--maroon-dark); margin: 0; }
 .candidate-role { font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-dark); margin: 4px 0 10px; }
 .candidate-card p { font-size: 14.5px; line-height: 1.6; color: var(--body); margin: 0; }
