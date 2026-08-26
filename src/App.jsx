@@ -20,9 +20,9 @@ const benPlatform = {
   quote: '"A school board seat is about service and stewardship, and being trusted by the community to get the work done."',
   planks: [
     ['Stabilize enrollment', 'Declining enrollment is the district\u2019s biggest challenge. Ben will keep inviting families to choose Northfield and protect the orchestra, arts, languages, and activities that make a Northfield education stand out.'],
-    ['Steward the district\u2019s resources', 'Responsible stewardship is the board\u2019s first job: budgets and contracts built in honest partnership with educators, advocacy for better state funding, and ensuring public funding stays with public schools.'],
+    ['Steward the district\u2019s resources', 'Responsible stewardship is the board\u2019s first job, and this includes managing and developing budgets and contacts in honest partnership with educators, families, and the community.'],
     ['Let educators lead the classroom', 'Curriculum belongs with the district\u2019s educational experts, with the board overseeing clear, measurable outcomes as the new reading and math curriculums take hold. We can become an even stronger district academically, ensuring that our students leave ready for their next chapter in life.'],
-    ['Later start times, done right', 'The research on later starts for older students is clear, and Northfield is the Big 9\u2019s earliest-starting high school. Ben supports the change, planned carefully so the effects on families and finances are understood first.'],
+    ['Later start times, done right', 'The research on later starts for older students is clear, and Northfield is the Big 9\u2019s earliest-starting high school. Ben supports the change, planned carefully so the effects on families and finances are understood first. Ben recognizes that changes to schedules affect students, educators, and families, and these are all voices that need to be heard.'],
   ],
 }
 
@@ -46,50 +46,21 @@ const resources = [
 ]
 
 function StepOneSvg() {
-  return ( 
-    
-  <>
-    <svg
-      viewBox="0 0 300 150"
-      className="step-svg"
-      role="img"
-      aria-label="Ballot with the School Board race highlighted"
-    >
+  return ( Ben recognizes that changes to schedules affect students, educators, and families, and these are all voices that need to be heard.<svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Ballot with the School Board race highlighted">
       <rect x="70" y="12" width="160" height="126" rx="4" fill="#fff" stroke="#cbbfa6" strokeWidth="2" />
-
       <rect x="82" y="24" width="70" height="8" rx="2" fill="#cbbfa6" />
-
       <ellipse cx="92" cy="46" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-
       <rect x="106" y="42" width="80" height="7" rx="2" fill="#e4dbc5" />
-
       <ellipse cx="92" cy="62" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-
       <rect x="106" y="58" width="66" height="7" rx="2" fill="#e4dbc5" />
-
       <rect x="76" y="76" width="148" height="54" rx="4" fill="#fdf3d7" stroke="#FFCC33" strokeWidth="2.5" />
-
-      <text
-        x="86"
-        y="93"
-        fontFamily="Bricolage Grotesque, sans-serif"
-        fontSize="11"
-        fontWeight="800"
-        fill="#7A0019"
-      >
-        SCHOOL BOARD
-      </text>
-
+      <text x="86" y="93" fontFamily="Bricolage Grotesque, sans-serif" fontSize="11" fontWeight="800" fill="#7A0019">SCHOOL BOARD</text>
       <ellipse cx="94" cy="107" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-
       <rect x="108" y="103" width="76" height="7" rx="2" fill="#e4dbc5" />
-
       <ellipse cx="94" cy="121" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-
       <rect x="108" y="117" width="60" height="7" rx="2" fill="#e4dbc5" />
     </svg>
-  </>
-);
+  )
 }
 
 function StepTwoSvg() {
@@ -145,12 +116,11 @@ export default function App() {
         </nav>
       </header>
 
-      {/* Endorsement banner hidden until 2026 endorsements land
       <div className="endorsement">
         <span className="badge">2026</span>
-        <span>[ Endorsement banner: endorsing organizations to come ]</span>
-        <a className="learn-more" href="#">Learn more</a>
-      </div> */}
+        <span>Endorsed by the Northfield Education Association</span>
+        <a className="learn-more" href="https://www.facebook.com/northfieldeducationassociation/">Learn more</a>
+      </div>
 
       <section className="hero">
         <div className="eyebrow">Northfield School Board · Tuesday, Nov 3, 2026</div>
