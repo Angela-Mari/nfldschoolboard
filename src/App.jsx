@@ -46,21 +46,132 @@ const resources = [
 ]
 
 function StepOneSvg() {
-  return ( Ben recognizes that changes to schedules affect students, educators, and families, and these are all voices that need to be heard.<svg viewBox="0 0 300 150" className="step-svg" role="img" aria-label="Ballot with the School Board race highlighted">
-      <rect x="70" y="12" width="160" height="126" rx="4" fill="#fff" stroke="#cbbfa6" strokeWidth="2" />
-      <rect x="82" y="24" width="70" height="8" rx="2" fill="#cbbfa6" />
-      <ellipse cx="92" cy="46" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-      <rect x="106" y="42" width="80" height="7" rx="2" fill="#e4dbc5" />
-      <ellipse cx="92" cy="62" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-      <rect x="106" y="58" width="66" height="7" rx="2" fill="#e4dbc5" />
-      <rect x="76" y="76" width="148" height="54" rx="4" fill="#fdf3d7" stroke="#FFCC33" strokeWidth="2.5" />
-      <text x="86" y="93" fontFamily="Bricolage Grotesque, sans-serif" fontSize="11" fontWeight="800" fill="#7A0019">SCHOOL BOARD</text>
-      <ellipse cx="94" cy="107" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-      <rect x="108" y="103" width="76" height="7" rx="2" fill="#e4dbc5" />
-      <ellipse cx="94" cy="121" rx="7" ry="4.5" fill="none" stroke="#8a7a58" strokeWidth="1.6" />
-      <rect x="108" y="117" width="60" height="7" rx="2" fill="#e4dbc5" />
+  return (
+    <svg
+      viewBox="0 0 300 150"
+      className="step-svg"
+      role="img"
+      aria-label="Ballot with the School Board race highlighted"
+    >
+      <rect
+        x="70"
+        y="12"
+        width="160"
+        height="126"
+        rx="4"
+        fill="#fff"
+        stroke="#cbbfa6"
+        strokeWidth="2"
+      />
+
+      <rect
+        x="82"
+        y="24"
+        width="70"
+        height="8"
+        rx="2"
+        fill="#cbbfa6"
+      />
+
+      <ellipse
+        cx="92"
+        cy="46"
+        rx="7"
+        ry="4.5"
+        fill="none"
+        stroke="#8a7a58"
+        strokeWidth="1.6"
+      />
+
+      <rect
+        x="106"
+        y="42"
+        width="80"
+        height="7"
+        rx="2"
+        fill="#e4dbc5"
+      />
+
+      <ellipse
+        cx="92"
+        cy="62"
+        rx="7"
+        ry="4.5"
+        fill="none"
+        stroke="#8a7a58"
+        strokeWidth="1.6"
+      />
+
+      <rect
+        x="106"
+        y="58"
+        width="66"
+        height="7"
+        rx="2"
+        fill="#e4dbc5"
+      />
+
+      <rect
+        x="76"
+        y="76"
+        width="148"
+        height="54"
+        rx="4"
+        fill="#fdf3d7"
+        stroke="#FFCC33"
+        strokeWidth="2.5"
+      />
+
+      <text
+        x="86"
+        y="93"
+        fontFamily="Bricolage Grotesque, sans-serif"
+        fontSize="11"
+        fontWeight="800"
+        fill="#7A0019"
+      >
+        SCHOOL BOARD
+      </text>
+
+      <ellipse
+        cx="94"
+        cy="107"
+        rx="7"
+        ry="4.5"
+        fill="none"
+        stroke="#8a7a58"
+        strokeWidth="1.6"
+      />
+
+      <rect
+        x="108"
+        y="103"
+        width="76"
+        height="7"
+        rx="2"
+        fill="#e4dbc5"
+      />
+
+      <ellipse
+        cx="94"
+        cy="121"
+        rx="7"
+        ry="4.5"
+        fill="none"
+        stroke="#8a7a58"
+        strokeWidth="1.6"
+      />
+
+      <rect
+        x="108"
+        y="117"
+        width="60"
+        height="7"
+        rx="2"
+        fill="#e4dbc5"
+      />
     </svg>
-  )
+  );
 }
 
 function StepTwoSvg() {
