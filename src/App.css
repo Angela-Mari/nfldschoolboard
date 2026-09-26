@@ -32,6 +32,24 @@
 .endorsement .badge { font: 700 13px ui-monospace, Menlo, monospace; background: var(--maroon-dark); color: #fff; padding: 4px 8px; border-radius: 3px; }
 .endorsement .learn-more { margin-left: auto; color: var(--maroon-dark); font-size: 13.5px; text-decoration: none; border-bottom: 2px solid var(--maroon-dark); }
 
+
+.forum-banner {
+  margin: 12px 48px 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--maroon-dark);
+  font-weight: 600;
+  font-size: 14px;
+}
+.forum-banner .badge-maroon { font: 700 13px ui-monospace, Menlo, monospace; background: var(--maroon); color: #fff; padding: 4px 8px; border-radius: 3px; }
+.forum-banner .learn-more { margin-left: auto; color: var(--maroon-dark); font-size: 13.5px; text-decoration: none; border-bottom: 2px solid var(--maroon-dark); }
+
 .hero { padding: 60px 48px 40px; }
 .eyebrow { font: 600 13px ui-monospace, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 14px; }
 .hero h1 { font-size: 56px; line-height: 1.05; font-weight: 800; margin: 0 0 18px; color: var(--maroon-dark); max-width: 20ch; text-wrap: pretty; }
